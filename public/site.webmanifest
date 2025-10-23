@@ -1,6 +1,6 @@
 {
-  "name": "Belleza Total",
-  "short_name": "Gestion de reservas ycitas",
+  "name": "Reser Vita",
+  "short_name": "Gestion de reservas y citas",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#F6FFCE",
+  "background_color": "#F6FFCE",
   "display": "standalone"
 }

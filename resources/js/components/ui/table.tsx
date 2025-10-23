@@ -66,7 +66,7 @@ function TableRow({
   return (
     <tr
       className={cn(
-        "hover:bg-muted/5 transition-colors cursor-default even:bg-secondary/10",
+        "hover:bg-muted/5 transition-colors cursor-default even:bg-primary/5",
         className
       )}
       {...props}

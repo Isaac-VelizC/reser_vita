@@ -71,7 +71,7 @@ const TableService = ({ datos, current_page, per_page }: TableServiceProps) => {
             datos.map((service, index) => (
               <TableRow
                 key={service.id}
-                className="odd:bg-transparent even:bg-secondary/5"
+                className="odd:bg-transparent even:bg-primary/5"
               >
                 <TableCell>
                   {(current_page - 1) * per_page + index + 1}

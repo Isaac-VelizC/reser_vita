@@ -20,7 +20,7 @@ function AppHeaderLayout({ children }: PropsWithChildren) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-amber-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 transition-colors duration-700">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-50 dark:from-background dark:via-gray-900 dark:to-gray-800 transition-colors duration-700">
       {/* Header */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -37,13 +37,13 @@ function AppHeaderLayout({ children }: PropsWithChildren) {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features-section" className="nav-link text-gray-700 dark:text-gray-300 hover:text-pink-600">
+            <a href="#features-section" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
               Características
             </a>
-            <a href="#testimonials-section" className="nav-link text-gray-700 dark:text-gray-300 hover:text-pink-600">
+            <a href="#testimonials-section" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
               Testimonios
             </a>
-            <a href="#pricing" className="nav-link text-gray-700 dark:text-gray-300 hover:text-pink-600">
+            <a href="#pricing" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
               Precios
             </a>
           </div>
@@ -75,13 +75,13 @@ function AppHeaderLayout({ children }: PropsWithChildren) {
                 className="bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-l border-pink-100/40 dark:border-gray-800"
               >
                 <div className="mt-16 flex flex-col items-center gap-6 text-center">
-                  <a href="#features" className="nav-link text-gray-700 dark:text-gray-300 hover:text-pink-600">
+                  <a href="#features" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
                     Características
                   </a>
-                  <a href="#testimonials" className="nav-link text-gray-700 dark:text-gray-300 hover:text-pink-600">
+                  <a href="#testimonials" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
                     Testimonios
                   </a>
-                  <a href="#pricing" className="nav-link text-gray-700 dark:text-gray-300 hover:text-pink-600">
+                  <a href="#pricing" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
                     Precios
                   </a>
                   <div className="mt-4 flex flex-col gap-4 w-full px-4">

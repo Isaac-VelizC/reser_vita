@@ -36,7 +36,7 @@ export default function Welcome() {
 
                             <h1 className="animate-slide-up text-5xl leading-tight font-bold lg:text-6xl">
                                 Gestiona tu Salón de Belleza
-                                <span className="block bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
+                                <span className="block bg-secondary bg-clip-text text-transparent">
                                     de forma Inteligente
                                 </span>
                             </h1>
@@ -150,7 +150,7 @@ export default function Welcome() {
                             </div>
 
                             {/* FONDOS DECORATIVOS */}
-                            <div className="animate-float-slow absolute -right-4 -bottom-4 h-32 w-32 rounded-3xl bg-gradient-to-br from-pink-400 to-rose-400 opacity-20"></div>
+                            <div className="animate-float-slow absolute -right-4 -bottom-4 h-32 w-32 rounded-3xl bg-gradient-to-br from-secondary/80 to-secondary/40 opacity-20"></div>
                             <div className="animate-float-slow absolute -top-4 -left-4 h-24 w-24 rounded-3xl bg-gradient-to-br from-blue-400 to-cyan-400 opacity-20 delay-500"></div>
                         </div>
                     </div>
@@ -169,7 +169,7 @@ export default function Welcome() {
             {/* CTA */}
             <section className="relative overflow-hidden px-4 py-20">
                 {/* Fondo decorativo dinámico */}
-                <div className="animate-gradient-x absolute inset-0 bg-gradient-to-br from-pink-300 via-rose-300 to-fuchsia-400 opacity-90 dark:from-pink-600 dark:via-rose-600 dark:to-fuchsia-700" />
+                <div className="animate-gradient-x absolute inset-0 bg-gradient-to-br from-blue-200 via-cyan-300/40 to-blue-300 opacity-90 dark:from-transparent dark:via-blue-600/20 dark:to-transparent" />
 
                 {/* Patrón decorativo */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,120,120,0.15)_0%,transparent_40%)] dark:bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.2)_0%,transparent_40%)]" />
@@ -191,14 +191,15 @@ export default function Welcome() {
                             <div className="flex flex-col justify-center gap-4 sm:flex-row">
                                 <Button
                                     onClick={() => router.get(register().url)}
-                                    className="bg-white px-8 py-3 text-sm font-semibold text-pink-600 shadow-md transition-all duration-300 hover:bg-gray-100 lg:text-lg dark:bg-pink-600 dark:text-white dark:hover:bg-pink-700"
+                                    className="bg-white px-8 py-3 text-sm font-semibold text-primary shadow-md transition-all duration-300 hover:bg-gray-100 lg:text-lg dark:bg-pink-600 dark:text-white dark:hover:bg-pink-700"
                                 >
                                     🚀 Prueba Gratis por 30 Días
                                 </Button>
 
                                 <Button
                                     variant="outline"
-                                    className="border-gray-900 px-8 py-3 text-sm text-gray-900 transition-all duration-300 hover:bg-gray-200 lg:text-lg dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-pink-600"
+                                    color='primary'
+                                    className="px-8 py-3 text-sm transition-all duration-300 lg:text-lg"
                                 >
                                     💬 Hablar con Ventas
                                 </Button>

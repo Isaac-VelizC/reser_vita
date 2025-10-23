@@ -57,7 +57,7 @@ export default function TableReservation({
                 {reservations.map((res, index) => (
                     <TableRow
                         key={res.id}
-                        className="odd:bg-transparent even:bg-secondary/5"
+                        className="odd:bg-transparent even:bg-primary/5"
                     >
                         <TableCell>{(current_page - 1) * per_page + index + 1}</TableCell>
                         <TableCell>{res.customer.name+ ' ' + res.customer.surname}</TableCell>

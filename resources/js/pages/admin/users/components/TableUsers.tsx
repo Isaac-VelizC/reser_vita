@@ -160,7 +160,7 @@ const TableUsers = ({
                                 {filteredUsers.map((user) => (
                                     <TableRow
                                         key={user.id}
-                                        className="rounded-xl odd:bg-transparent even:bg-secondary/10"
+                                        className="rounded-xl odd:bg-transparent even:bg-primary/5"
                                     >
                                         <TableCell>
                                             <Checkbox

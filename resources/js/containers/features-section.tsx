@@ -73,7 +73,7 @@ export default function FeaturesSection() {
             className="relative overflow-hidden px-4 py-20"
         >
             {/* Decorativo de fondo */}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white via-pink-50/20 to-white dark:from-gray-950 dark:via-gray-800/50 dark:to-gray-950"></div>
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white via-blue-50/20 to-white dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
 
             <div className="relative z-10 container mx-auto max-w-6xl">
                 {/* Encabezado */}
@@ -93,7 +93,7 @@ export default function FeaturesSection() {
                     </Badge>
                     <h2 className="mb-4 text-4xl font-bold md:text-5xl">
                         Todo lo que necesitas para{' '}
-                        <span className="block bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
+                        <span className="block text-primary">
                             gestionar tu negocio
                         </span>
                     </h2>

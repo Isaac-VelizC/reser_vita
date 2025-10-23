@@ -12,7 +12,7 @@ const AvatarCustomer = ({ iniciales, imageAvatar }: AvatarCustomerProps) => {
     return (
         <Avatar className="size-12 overflow-hidden rounded-full">
             <AvatarImage src={imageAvatar} alt={iniciales} />
-            <AvatarFallback className="rounded-full bg-secondary/40 font-bold text-primary dark:bg-primary/40 dark:text-white">
+            <AvatarFallback className="rounded-full bg-primary/20 font-bold text-primary dark:bg-primary/40 dark:text-white">
                 {getInitials(iniciales)}
             </AvatarFallback>
         </Avatar>

@@ -119,7 +119,7 @@ const TableClients = ({ datos, statusData }: TableClientsProps) => {
                                 {filteredClients.map((client) => (
                                     <TableRow
                                         key={client.id}
-                                        className="rounded-xl odd:bg-transparent even:bg-secondary/10"
+                                        className="rounded-xl odd:bg-transparent even:bg-primary/5"
                                     >
                                         <TableCell>
                                             <Checkbox

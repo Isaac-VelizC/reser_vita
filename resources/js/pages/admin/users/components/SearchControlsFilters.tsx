@@ -261,7 +261,7 @@ const SearchControlsFilters = ({
                             role="status"
                             aria-live="polite"
                         >
-                            <span className="text-sm text-secondary">
+                            <span className="text-sm text-muted-foreground">
                                 {filteredUsers.length}{' '}
                                 {pluralize('resultado', filteredUsers.length)}{' '}
                                 encontrado
@@ -271,6 +271,7 @@ const SearchControlsFilters = ({
                                 size={'sm'}
                                 variant={'outline'}
                                 onClick={handleClearFilters}
+                                color='neutral'
                                 type="button"
                             >
                                 Limpiar filtros
