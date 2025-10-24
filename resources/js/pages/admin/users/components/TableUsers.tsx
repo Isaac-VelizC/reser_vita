@@ -22,6 +22,7 @@ import {
     Mail,
     Phone,
     SquarePen,
+    TimerReset,
     Trash2,
     Users,
 } from 'lucide-react';
@@ -230,6 +231,13 @@ const TableUsers = ({
                                                                 {user.status}
                                                             </span>
                                                         </DropdownMenuItem>
+                                                        {user.role == "stylist" && <DropdownMenuItem onClick={() => router.get(admin.availability.edit(user.id).url)}>
+                                                            <span className="flex items-center gap-4 text-secondary">
+                                                                <TimerReset className="h-4 w-4 text-secondary" />
+                                                                Horarios
+                                                            </span>
+                                                        </DropdownMenuItem> }
+                                                        
                                                         <div className="divider my-0 divider-primary"></div>
                                                         <DropdownMenuItem onClick={() => handleDeleteUser(user)}>
                                                             <span className="flex items-center gap-4 text-danger">

@@ -98,7 +98,7 @@ export default function Login({ status, canResetPassword }: LoginProps) {
                         <div className="text-center text-sm text-muted-foreground">
                             ¿No tienes una cuenta?{' '}
                             <TextLink href={register()} tabIndex={5}>
-                                Inscribirse
+                                Regístrate
                             </TextLink>
                         </div>
                     </>

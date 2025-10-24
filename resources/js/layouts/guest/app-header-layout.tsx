@@ -2,12 +2,27 @@
 import { PropsWithChildren, useEffect, useState } from 'react';
 import { dashboard, login, register } from '@/routes';
 import { router, usePage } from '@inertiajs/react';
-//import { AppShell } from '@/components/app-shell';
 import { Button } from '@/components/ui/button';
 import { SharedData } from '@/types';
 import AppLogo from '@/components/app-logo';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
+
+
+const MenuLinks = [
+  {
+    name: "Características",
+    link: "#features-section"
+  },
+  {
+    name: "Testimonios",
+    link: "#testimonials-section"
+  },
+  {
+    name: "Precios",
+    link: "#pricing"
+  }
+];
 
 function AppHeaderLayout({ children }: PropsWithChildren) {
   const { auth } = usePage<SharedData>().props;
@@ -37,15 +52,11 @@ function AppHeaderLayout({ children }: PropsWithChildren) {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features-section" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
-              Características
-            </a>
-            <a href="#testimonials-section" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
-              Testimonios
-            </a>
-            <a href="#pricing" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
-              Precios
-            </a>
+            {MenuLinks.map((item, index) => 
+              <a key={index} href={item.link} className="nav-link hover:text-primary">
+                {item.name}
+              </a>
+            )}
           </div>
 
           {/* Auth Buttons */}
@@ -75,15 +86,11 @@ function AppHeaderLayout({ children }: PropsWithChildren) {
                 className="bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-l border-pink-100/40 dark:border-gray-800"
               >
                 <div className="mt-16 flex flex-col items-center gap-6 text-center">
-                  <a href="#features" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
-                    Características
-                  </a>
-                  <a href="#testimonials" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
-                    Testimonios
-                  </a>
-                  <a href="#pricing" className="nav-link text-gray-700 dark:text-gray-300 hover:text-primary">
-                    Precios
-                  </a>
+                  {MenuLinks.map((item, index) => 
+                    <a key={index} href={item.link} className="nav-link hover:text-primary">
+                      {item.name}
+                    </a>
+                  )}
                   <div className="mt-4 flex flex-col gap-4 w-full px-4">
                     {auth.user ? (
                       <Button onClick={() => router.get(dashboard().url)} className="w-full">

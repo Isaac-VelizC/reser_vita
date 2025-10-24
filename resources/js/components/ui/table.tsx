@@ -8,7 +8,7 @@ function Table({
   ...props
 }: React.HTMLAttributes<HTMLTableElement>) {
   return (
-    <div className="w-full overflow-x-auto rounded-xl">
+    <div className="w-full overflow-x-auto rounded-lg">
       <table
         className={cn(
           "w-full text-sm text-left text-foreground border-collapse",
@@ -31,7 +31,7 @@ function TableHeader({
   return (
     <thead
       className={cn(
-        "bg-gray-200 dark:bg-black/50 text-sm tracking-wide font-bold text-gray-950 dark:text-gray-300 select-none",
+        "bg-gray-200 dark:bg-black/30 text-sm tracking-wide font-bold text-gray-950 dark:text-gray-300 select-none",
         className
       )}
       {...props}

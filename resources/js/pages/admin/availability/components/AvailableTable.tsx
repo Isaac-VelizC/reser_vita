@@ -10,6 +10,7 @@ import { router, useForm } from '@inertiajs/react';
 import { useState } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Table, TableBody, TableCell, TableHeader, TableRow } from '@/components/ui/table';
+import { Checkbox } from '@/components/ui/checkbox';
 
 type AvailableTableProps = {
     availabilities: AvailabilityInterface[];
@@ -84,9 +85,9 @@ const AvailableTable = ({ availabilities }: AvailableTableProps) => {
                                 <TableCell>Fecha</TableCell>
                                 <TableCell>Horario</TableCell>
                                 <TableCell>Duración</TableCell>
-                                <TableCell>Estado</TableCell>
+                                <TableCell>Estado Horario</TableCell>
+                                <TableCell>Activar/Desactivar</TableCell>
                                 <TableCell>Acciones</TableCell>
-                                <TableCell></TableCell>
                             </TableRow>
                         </TableHeader>
                         <TableBody>
@@ -141,9 +142,7 @@ const AvailableTable = ({ availabilities }: AvailableTableProps) => {
                                             </Badge>
                                         </TableCell>
                                         <TableCell>
-                                            <input
-                                                type="checkbox"
-                                                className="toggle w-10 rounded-xl bg-gray-200/60 toggle-primary"
+                                            <Checkbox
                                                 checked={
                                                     availability.is_working
                                                 }

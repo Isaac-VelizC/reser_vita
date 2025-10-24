@@ -8,6 +8,7 @@ import TestimonialsSection from '@/containers/testimonials-section';
 import AppFooterLayout from '@/layouts/guest/app-footer-layout';
 import AppHeaderLayout from '@/layouts/guest/app-header-layout';
 import { register } from '@/routes';
+import { BadgeColor } from '@/types';
 import { Head, router } from '@inertiajs/react';
 import { Play, Star, Zap } from 'lucide-react';
 
@@ -24,7 +25,7 @@ export default function Welcome() {
             {/* Hero Section */}
             <section className="overflow-hidden px-4 pb-20">
                 <div className="container mx-auto max-w-6xl">
-                    <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+                    <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
                         {/* LADO IZQUIERDO */}
                         <div className="animate-fade-in-up space-y-6">
                             <div className="animate-fade-in-down inline-block">
@@ -36,12 +37,12 @@ export default function Welcome() {
 
                             <h1 className="animate-slide-up text-5xl leading-tight font-bold lg:text-6xl">
                                 Gestiona tu Salón de Belleza
-                                <span className="block bg-secondary bg-clip-text text-transparent">
+                                <span className="block text-primary">
                                     de forma Inteligente
                                 </span>
                             </h1>
 
-                            <p className="animate-fade-in text-xl leading-relaxed text-gray-600 delay-150">
+                            <p className="animate-fade-in text-lg leading-relaxed text-gray-600 delay-150">
                                 Sistema completo de gestión de reservas,
                                 clientes y estilistas. Aumenta tu productividad
                                 y ofrece una experiencia excepcional a tus
@@ -136,7 +137,7 @@ export default function Welcome() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <Badge color={badge}>
+                                                <Badge color={badge as BadgeColor}>
                                                     {badge === 'success'
                                                         ? 'Confirmada'
                                                         : badge === 'warning'
